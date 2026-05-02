@@ -1,0 +1,189 @@
+/* ─── Footer Shell ───────────────────────────────────────────────────────────── */
+
+.footer {
+  background: var(--msk-surface);
+  border-top: 1px solid var(--msk-border-lt);
+  color: var(--msk-muted);
+  font-family: var(--ifm-font-family-base);
+  font-size: 13px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* ─── Brand ──────────────────────────────────────────────────────────────────── */
+
+.brand {
+  flex: 1 1 220px;
+  max-width: 280px;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none !important;
+  margin-bottom: 0.65rem;
+}
+
+.brandLogo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--msk-text);
+  letter-spacing: -0.02em;
+}
+
+.brandTagline {
+  font-family: var(--ifm-font-family-base);
+  font-size: 12px;
+  color: var(--msk-dim);
+  line-height: 1.6;
+  margin: 0 0 0.85rem;
+}
+
+.brandBadge {
+  display: inline-block;
+  font-family: var(--ifm-font-family-base);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--msk-border);
+  color: var(--msk-dim);
+}
+
+/* ─── Columns ────────────────────────────────────────────────────────────────── */
+
+.columns {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  flex: 2 1 400px;
+  justify-content: flex-end;
+}
+
+.column {
+  min-width: 110px;
+}
+
+.columnTitle {
+  font-family: var(--ifm-font-family-base);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--msk-dim);
+  margin: 0 0 0.75rem;
+}
+
+.columnList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.columnLink {
+  font-family: var(--ifm-font-family-base);
+  font-size: 12.5px;
+  color: var(--msk-muted) !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+  line-height: 1.4;
+}
+
+.columnLink:hover {
+  color: var(--msk-text) !important;
+}
+
+/* ─── Bottom Bar ─────────────────────────────────────────────────────────────── */
+
+.bottom {
+  border-top: 1px solid var(--msk-border-lt);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  margin: 0;
+  font-family: var(--ifm-font-family-base);
+  font-size: 11px;
+  color: var(--msk-dim);
+  letter-spacing: 0.01em;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.legalLink {
+  font-family: var(--ifm-font-family-base);
+  font-size: 11px;
+  color: var(--msk-dim) !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+  letter-spacing: 0.01em;
+}
+
+.legalLink:hover {
+  color: var(--msk-muted) !important;
+}
+
+.legalDivider {
+  color: var(--msk-border);
+  font-size: 12px;
+  line-height: 1;
+  user-select: none;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.25rem 1.5rem;
+  }
+
+  .brand {
+    max-width: 100%;
+  }
+
+  .columns {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.9rem 1.25rem 1rem;
+  }
+}

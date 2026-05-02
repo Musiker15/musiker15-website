@@ -1,0 +1,138 @@
+/* ── Hero – MSK style ── */
+.hero {
+  position: relative;
+  padding: 56px 32px 48px;
+  text-align: center;
+  overflow: hidden;
+  background: var(--msk-bg);
+  isolation: isolate;
+}
+
+/* Top accent line (blue gradient) */
+.heroTopline {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #3b6fe0, transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Radial glow blob */
+.heroGlow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 260px;
+  background: radial-gradient(ellipse at 50% 0%,
+    rgba(59,111,224,0.20) 0%,
+    rgba(59,111,224,0.06) 40%,
+    transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme='light'] .heroGlow {
+  background: radial-gradient(ellipse at 50% 0%,
+    rgba(59,111,224,0.12) 0%,
+    rgba(59,111,224,0.03) 40%,
+    transparent 70%);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 0.5s cubic-bezier(0.16,1,0.3,1) both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Label – "DOKUMENTATION" */
+.heroLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--msk-accent);
+  margin-bottom: 14px;
+}
+
+/* Title */
+.heroTitle {
+  font-family: 'Syne', sans-serif !important;
+  font-size: clamp(2.2rem, 6vw, 3.4rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--msk-text) !important;
+  margin-bottom: 12px !important;
+}
+
+[data-theme='light'] .heroTitle {
+  color: #0d1529 !important;
+}
+
+/* Subtitle */
+.heroSub {
+  font-size: 14px;
+  color: var(--msk-muted);
+  max-width: 420px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+}
+
+/* Buttons */
+.heroButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: var(--msk-accent) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  font-family: 'Inter', sans-serif !important;
+  border-radius: var(--msk-radius) !important;
+  padding: 9px 20px !important;
+  transition: background 0.15s !important;
+}
+.btnPrimary:hover {
+  background: var(--msk-accent-hov) !important;
+  color: #fff !important;
+}
+
+.btnGhost {
+  background: transparent !important;
+  border: 1px solid var(--msk-border) !important;
+  color: var(--msk-muted) !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  font-family: 'Inter', sans-serif !important;
+  border-radius: var(--msk-radius) !important;
+  padding: 9px 20px !important;
+  transition: background 0.15s, border-color 0.15s, color 0.15s !important;
+}
+.btnGhost:hover {
+  background: var(--msk-surface-2, #2a2b2e) !important;
+  border-color: var(--msk-border) !important;
+  color: var(--msk-text) !important;
+}
+[data-theme='light'] .btnGhost:hover {
+  background: var(--msk-surface-2) !important;
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 36px 16px 32px; }
+}

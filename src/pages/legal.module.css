@@ -1,0 +1,99 @@
+/* ─── Legal Page Layout ─────────────────────────────────────────────────────── */
+
+.legalPage {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* ─── Language Switcher ─────────────────────────────────────────────────────── */
+
+.langSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: flex-end;
+}
+
+.langLabel {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.langSelect {
+  appearance: none;
+  padding: 0.35rem 2rem 0.35rem 0.75rem;
+  border-radius: var(--msk-radius, 8px);
+  border: 1px solid var(--msk-border);
+  background-color: var(--msk-surface);
+  color: var(--msk-text);
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--ifm-font-family-base);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238d9096' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.langSelect:hover {
+  border-color: var(--msk-accent);
+}
+
+.langSelect:focus {
+  outline: none;
+  border-color: var(--msk-accent);
+  box-shadow: 0 0 0 3px var(--msk-accent-dim);
+}
+
+/* ─── Content ───────────────────────────────────────────────────────────────── */
+
+.legalContent h1 {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--msk-text);
+  border-bottom: 2px solid var(--msk-border-lt);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.legalContent h2 {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--msk-text);
+  border-left: 3px solid var(--msk-accent);
+  padding-left: 10px;
+}
+
+.legalContent h3 {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--msk-text);
+}
+
+.legalContent p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--msk-muted);
+  margin-bottom: 0.85rem;
+}
+
+.legalContent a {
+  color: var(--msk-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+
+.legalContent a:hover {
+  color: var(--ifm-color-primary-light);
+}

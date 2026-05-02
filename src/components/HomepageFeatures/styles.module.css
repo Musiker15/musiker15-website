@@ -1,0 +1,160 @@
+/* ── Section wrapper ── */
+.section {
+  background: var(--msk-bg);
+  padding-bottom: 56px;
+}
+
+/* MSK divider with dot */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 32px;
+  margin: 4px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--msk-border) 20%, var(--msk-border) 80%, transparent);
+}
+.dividerDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--msk-accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(59,111,224,0.55);
+}
+
+/* Section inner */
+.sectionInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 32px 0;
+}
+
+.sectionHeader {
+  margin-bottom: 24px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--msk-accent);
+  margin-bottom: 6px;
+}
+
+.sectionTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: var(--msk-text) !important;
+  margin-bottom: 6px !important;
+  letter-spacing: -0.02em !important;
+}
+
+.sectionDesc {
+  font-size: 13px;
+  color: var(--msk-muted);
+  max-width: 480px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Card grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 12px 0 0;
+}
+
+/* Card */
+.card {
+  background: var(--msk-surface);
+  border: 1px solid var(--msk-border-lt);
+  border-radius: var(--msk-radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  transition: border-color 0.2s, transform 0.2s;
+  color: inherit;
+}
+.card:hover {
+  border-color: var(--msk-accent-bdr);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+/* Card banner (icon area) */
+.cardBanner {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--msk-surface-2, #2a2b2e), var(--msk-surface));
+  position: relative;
+}
+[data-theme='light'] .cardBanner {
+  background: linear-gradient(135deg, #eef1f8, #f5f7fb);
+}
+/* Top accent on hover */
+.card:hover .cardBanner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--msk-accent), transparent);
+}
+
+.cardIcon { font-size: 2rem; }
+
+/* Card body */
+.cardBody {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.cardTop { margin-bottom: 4px; }
+.cardLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--msk-accent);
+  margin: 0;
+}
+.cardTitle {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: var(--msk-text) !important;
+  margin-bottom: 6px !important;
+  letter-spacing: -0.01em !important;
+}
+.cardDesc {
+  font-size: 12.5px;
+  color: var(--msk-muted);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 12px;
+}
+.cardLink {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--msk-accent);
+  transition: color 0.15s;
+}
+.card:hover .cardLink { color: var(--ifm-color-primary-light); }
+
+@media (max-width: 767px) {
+  .sectionInner { padding: 20px 16px 0; }
+  .divider { padding: 0 16px; }
+  .grid { grid-template-columns: 1fr; }
+}
