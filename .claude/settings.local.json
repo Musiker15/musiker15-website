@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(npm view *)",
+      "Bash(yarn --version)",
+      "Bash(yarn install *)",
+      "Bash(yarn build *)"
+    ]
+  }
+}
