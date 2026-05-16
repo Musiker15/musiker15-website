@@ -5,7 +5,10 @@
       "Bash(npm view *)",
       "Bash(yarn --version)",
       "Bash(yarn install *)",
-      "Bash(yarn build *)"
+      "Bash(yarn build *)",
+      "Bash(gh run *)",
+      "Bash(gh pr *)",
+      "Bash(yarn upgrade *)"
     ]
   }
 }
