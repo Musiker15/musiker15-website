@@ -20,25 +20,12 @@ const content = {
         </p>
         <p><strong>Kontakt:</strong><br />E-Mail: info@musiker15.de</p>
 
-        <h3>Nutzung der Kontaktdaten für Werbezwecke ausgeschlossen</h3>
-        <p>
-          Der Verwendung meiner/unserer Daten für Marketing- und Werbezwecke gemäß § 7 Abs. 2 Nr. 2 UWG
-          sowie einer Weitergabe an Dritte wird hiermit ausdrücklich widersprochen.
-          Zuwiderhandlungen werden strafrechtlich verfolgt.
-        </p>
-
         <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
         <p>
           <strong>Moritz Kohm</strong><br />
           c/o Impressumservice Dein-Impressum<br />
           Stettiner Str. 41<br />
           35410 Hungen
-        </p>
-
-        <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
-        <p>
-          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-          Verbraucherschlichtungsstelle teilzunehmen.
         </p>
 
         <h2>Haftungsausschluss</h2>
@@ -54,6 +41,19 @@ const content = {
           Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen
           Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
           oder Betreiber der Seiten verantwortlich.
+        </p>
+
+        <h2>Widerspruch gegen Werbe-Mails</h2>
+        <p>
+          Der Nutzung der im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter
+          Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche
+          Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
+        </p>
+
+        <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+        <p>
+          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle teilzunehmen.
         </p>
       </>
     ),
@@ -74,13 +74,6 @@ const content = {
         </p>
         <p><strong>Contact:</strong><br />Email: info@musiker15.de</p>
 
-        <h3>Use of contact data for advertising purposes excluded</h3>
-        <p>
-          The use of our contact data published within the scope of the imprint obligation for
-          sending unsolicited advertising and informational materials is hereby expressly prohibited.
-          Violations will be prosecuted under criminal law.
-        </p>
-
         <h2>Responsible for content according to § 18 Para. 2 MStV</h2>
         <p>
           <strong>Moritz Kohm</strong><br />
@@ -88,12 +81,6 @@ const content = {
           Stettiner Str. 41<br />
           35410 Hungen<br />
           Germany
-        </p>
-
-        <h2>Consumer Dispute Resolution</h2>
-        <p>
-          We are not willing or obliged to participate in dispute resolution proceedings before a
-          consumer arbitration board.
         </p>
 
         <h2>Disclaimer</h2>
@@ -109,6 +96,19 @@ const content = {
           Our offer contains links to external websites of third parties, on whose contents we have
           no influence. The respective provider or operator of the linked pages is always responsible
           for the content of the linked pages.
+        </p>
+
+        <h2>Objection to Promotional Emails</h2>
+        <p>
+          The use of contact data published as part of the legally required imprint for sending unsolicited advertising or informational material is
+          hereby objected to. The operators of these pages expressly reserve the right to take legal action in the event of the unsolicited sending
+          of advertising information, for example through spam emails.
+        </p>
+
+        <h2>Consumer Dispute Resolution</h2>
+        <p>
+          We are not willing or obliged to participate in dispute resolution proceedings before a
+          consumer arbitration board.
         </p>
       </>
     ),
